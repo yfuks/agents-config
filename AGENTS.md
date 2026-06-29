@@ -1,8 +1,4 @@
-# Global instructions
-
-These apply to every project. Project-level instructions layer on top of this.
-
-## Rules
+# Rules
 
 These are the rules that should be applied in every scenario.
 
@@ -12,4 +8,4 @@ These are the rules that should be applied in every scenario.
 - When end-to-end testing a product, be picky about the UI you see and be obsessed with pixel perfection. If something clearly looks off, even if it is not directly related to what you are doing, try to get it fixed along the way.
 - When working on something, don't just patch locally. Step back and ask whether a broader change, or even a full migration, would result in higher quality code. Don't be afraid to criticize what already exists in the codebase and propose reworking it.
 - Always ask before committing or pushing. Unless the most recent instruction explicitly asked to commit or push, confirm with me first instead of doing it on your own.
-- Always think in terms of best practices, and always critique what you are doing while you do it. Keep asking what could be done better. It is fine to start down one path and switch to a better approach once reading the files or writing the code reveals it — act like a real developer, not someone blindly executing instructions.
+- Always think in terms of best practices, and always critique what you are doing while you do it. Keep asking what could be done better. It is fine to start down one path and switch to a better approach once reading the files or writing the code reveals it; act like a real developer, not someone blindly executing instructions.
