@@ -23,6 +23,9 @@ These are the rules that should be applied in every scenario.
   If a skill clearly applies, run it on your own; only ask first when more than one skill could reasonably apply and the choice matters.
 - Always ask before committing or pushing.
   Unless the most recent instruction explicitly asked to commit or push, confirm with me first instead of doing it on your own.
+- Never create a merge commit: no `git merge`, no merging `git pull`.
+  Integrate upstream changes with `git pull --rebase` (or `git rebase`), so history stays linear.
+  If a rebase would rewrite a commit already pushed to another branch, ask me before force-pushing instead of merging.
 - Write commit messages as a single line stating what the change does.
   No body, no why, no when.
 - Never add yourself as a co-author of a commit.
@@ -30,8 +33,9 @@ These are the rules that should be applied in every scenario.
 - In markdown and comments, break the line after every sentence.
   Stay brief and leave out the thought process.
   Every extra line is one more thing to keep accurate over time.
-- Needing a comment is a signal that the logic, function, or data is not clear enough.
-  Fix the naming or the structure first, and only keep the comment if it still earns its place.
+- Comments are banned: never use them.
+  Fix the naming or the structure instead, so the logic, function, or data is clear on its own.
+  If a decision or a precision needs to be recorded, put it in documentation instead.
 - Never use the em dash character ("—") anywhere: not in prose, code, comments, commit messages, or documentation.
   Overusing it is a tell-tale sign of AI writing.
   Use a comma, colon, parentheses, or two separate sentences instead.
